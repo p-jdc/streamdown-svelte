@@ -8,6 +8,7 @@
 	import { IsInViewport } from 'runed';
 	import type { Plugin } from 'svelte-exmarkdown';
 	import type { Snippet } from 'svelte';
+	import { mode } from 'mode-watcher';
 
 	const DEFAULT_SPEED = 100;
 
@@ -154,7 +155,13 @@
 					With svelte-streamdown
 				</div>
 				<div class="h-[400px] overflow-y-auto bg-background p-4">
-					<Streamdown {content} {...streamdownProps} />
+					<Streamdown
+						shikiTheme={mode.current === 'dark' ? 'github-dark' : 'github-light'}
+						shikiPreloadThemes={['github-dark', 'github-light']}
+						baseTheme="shadcn"
+						{content}
+						{...streamdownProps}
+					/>
 				</div>
 			</div>
 		</div>
