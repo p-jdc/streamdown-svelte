@@ -142,7 +142,7 @@
 			{:else}
 				<div class="divide-y">
 					<div class="bg-dashed w-full p-4 text-center text-sm font-medium text-muted-foreground">
-						With Streamdown marked
+						With Streamdown Svelte (marked)
 					</div>
 					<div class="h-[400px] overflow-y-auto bg-background p-4">
 						<Streamdown_marked {content} {...streamdownProps} />

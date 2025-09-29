@@ -17,7 +17,7 @@
 			<h1
 				class="text-4xl leading-tight font-semibold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl"
 			>
-				Streamdown-Svelte
+				Svelte-Streamdown
 			</h1>
 			<p class="mx-auto max-w-2xl text-lg text-balance text-muted-foreground md:text-2xl">
 				A svelte version of the <a
