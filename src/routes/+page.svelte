@@ -20,7 +20,7 @@
 	import HomeIcon from '@lucide/svelte/icons/home';
 	import { resolve } from '$app/paths';
 
-	let isOriginal = $state(true);
+	let isOriginal = $state(false);
 
 	function navigateHome() {
 		goto(resolve('/'));
