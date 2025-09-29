@@ -40,7 +40,7 @@ ${'</scr' + 'ipt>'}
 
 	const streamdownCode = `<script lang="ts">
 	import { Chat } from '@ai-sdk/svelte';
-	import Streamdown from '$lib/components/streamdown/Streamdown.svelte';
+	import Streamdown from '$lib/streamdown/Streamdown.svelte';
 
 	let input = '';
 	const chat = new Chat({});

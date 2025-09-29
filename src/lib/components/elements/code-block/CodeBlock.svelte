@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { setContext } from 'svelte';
-	import { highlightCode } from '../../../streamdown/lib/code/highlighter';
+	import { highlightCode } from '../../../streamdown_marked/lib/code/highlighter';
 	import { cn } from '$lib/utils';
 	import type { WithElementRef } from '$lib/utils.js';
 	import type { HTMLAttributes } from 'svelte/elements';

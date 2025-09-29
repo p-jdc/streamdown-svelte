@@ -1,7 +1,7 @@
 <script lang="ts">
 	import RefreshCcw from '@lucide/svelte/icons/refresh-ccw';
-	import { Streamdown } from '$lib/streamdown';
 	import { Streamdown as Streamdown_marked } from '$lib/streamdown_marked';
+	import { Streamdown } from 'svelte-streamdown';
 	import Markdown from 'svelte-exmarkdown';
 	import { Button } from '$lib/components/ui/button';
 	import { onDestroy } from 'svelte';
@@ -151,7 +151,7 @@
 			{/if}
 			<div class="divide-y">
 				<div class="bg-dashed w-full p-4 text-center text-sm font-medium text-muted-foreground">
-					With Streamdown
+					With svelte-streamdown
 				</div>
 				<div class="h-[400px] overflow-y-auto bg-background p-4">
 					<Streamdown {content} {...streamdownProps} />
