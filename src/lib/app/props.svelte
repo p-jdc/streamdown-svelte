@@ -33,20 +33,6 @@
 			name: 'defaultOrigin',
 			type: 'string',
 			description: 'Default origin to use for relative URLs in links and images.'
-		},
-		{
-			name: 'rehypePlugins',
-			type: 'array',
-			default: '[rehypeKatex]',
-			description:
-				'Array of rehype plugins to use for processing HTML. Includes KaTeX for math rendering by default.'
-		},
-		{
-			name: 'remarkPlugins',
-			type: 'array',
-			default: '[remarkGfm, remarkMath]',
-			description:
-				'Array of remark plugins to use for processing markdown. Includes GitHub Flavored Markdown and math support by default.'
 		}
 	];
 </script>
