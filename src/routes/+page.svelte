@@ -15,22 +15,11 @@
 	import TerminatorParser from '$lib/app/terminator-parser.svelte';
 	import { Label } from '$lib/components/ui/label/index.js';
 	import { Switch } from '$lib/components/ui/switch/index.js';
-	import { Button } from '$lib/components/ui/button/index.js';
-	import { goto } from '$app/navigation';
-	import HomeIcon from '@lucide/svelte/icons/home';
-	import { resolve } from '$app/paths';
 
 	let isOriginal = $state(false);
-
-	function navigateHome() {
-		goto(resolve('/'));
-	}
 </script>
 
 <div class="fixed top-3 left-3 z-50 flex items-center space-x-2">
-	<Button variant="ghost" size="icon" onclick={navigateHome} aria-label="Navigate to home">
-		<HomeIcon class="size-4" />
-	</Button>
 	<LightSwitch variant="ghost" />
 	<Switch id="next-mode" bind:checked={isOriginal} />
 	<Label for="next-mode">Original</Label>
